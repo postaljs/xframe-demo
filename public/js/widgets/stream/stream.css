@@ -1,0 +1,76 @@
+li {
+    list-style-type: none;
+    display: table-row;
+}
+
+.thumbnail-image {
+    float: left;
+    height: 48px;
+    overflow: hidden;
+    width: 48px;
+    margin-top: 3px;
+    border: 1pt solid black;
+}
+
+.tweet {
+    padding: 10px 20px;
+    font-size: 12px;
+    position: relative;
+}
+
+.tweet-dogear {
+    background: url(./tweet-dogear.png) no-repeat 24px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 25px;
+}
+
+.tweet-content {
+    margin-left: 58px;
+    min-height: 48px;
+}
+
+.tweet-row {
+    display: block;
+    position: relative;
+    line-height: 125%;;
+}
+
+.tweet-screen-name {
+    font-weight: bold;
+    color: #333!important;
+    margin-bottom: 5px;
+}
+
+.tweet-full-name {
+    color: #999;
+    font-size: 12px;
+}
+
+.tweet-timestamp {
+    color: #999!important;
+    font-size: 11px;
+    margin-top: 7px;
+}
+
+.tweet-text {
+    padding: 0;
+    font-family: Arial,"Helvetica Neue",sans-serif;
+    line-height: 125%;
+    word-wrap: break-word;
+}
+
+html {
+    height: 90%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.loading {
+    border: 1pt solid rgb(236, 236, 236);
+    background: url("../../../css/loading-spinner.gif") center center no-repeat;
+}

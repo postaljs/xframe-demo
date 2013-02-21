@@ -1,0 +1,16 @@
+html {
+    height: 90%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.loading {
+    border: 1pt solid rgb(236, 236, 236);
+    background: url("../../../css/loading-spinner.gif") center center no-repeat;
+}
+
+#tags {
+    visibility: hidden;
+}

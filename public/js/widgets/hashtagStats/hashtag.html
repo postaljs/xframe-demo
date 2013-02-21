@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <link rel="stylesheet" type="text/css" href="hashtagStats.css">
+    <title></title>
+</head>
+<body>
+    <div id="sky">
+        <canvas width="400" height="400" id="cloud"></canvas>
+    </div>
+    <ul id="tags" data-bind="foreach: tags">
+        <li><a target="_blank" data-bind="text: hashtag, attr: { 'data-weight': weight, href : href, 'data-tag': hashtag }"></a></li>
+    </ul>
+    <script data-main="/js/widgets/hashtagStats/hashtagStats-main" src="/js/lib/require/require-jquery.js"></script>
+</body>
+</html>

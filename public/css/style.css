@@ -1,0 +1,78 @@
+.col {
+    float: left;
+}
+
+.row {
+    clear: both;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left:0;
+    background: rgb(230, 230, 230);
+    width: 100%;
+    color: rgb(153, 153, 153);
+    padding-left: 25px;
+    border-bottom: 1pt solid rgb(175,175,175);
+}
+
+header div {
+    vertical-align: middle;
+    float: left;
+    font-size: 16pt;
+    font-family: "Trebuchet MS";
+    margin: 6px 0px 5px 0px;
+}
+
+nav {
+    float: right;
+    padding: 2px 4px 2px 6px;
+    margin: 4px 40px 3px 0px;
+}
+
+input[type=text] {
+    width: 75px;
+    margin-left: 5px;
+}
+
+label {
+    color: rgb(99, 99, 99);
+    font: 10pt Arial;
+}
+
+.widgets {
+    margin-top: 10px;
+}
+
+#comm {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+#lang {
+    width:475px;
+    height: 300px;
+    border: none;
+    overflow: hidden;
+}
+
+#stream {
+    width:475px;
+    height: 735px;
+    border: none;
+    overflow: hidden;
+}
+
+#hashtag {
+    width:475px;
+    height: 435px;
+    border: none;
+    overflow: hidden;
+}
+
+.hidden {
+    visibility: hidden;
+}
+

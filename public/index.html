@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script data-main="js/parent-main" src="js/lib/require/require-jquery.js"></script>
+</head>
+<body>
+    <iframe src="js/widgets/comm/comm.html" id="comm"></iframe>
+    <header>
+        <div>postal.xframe demo</div>
+        <nav>
+            <label>Search Term:<input type="text" value="JavaScript" id="searchQry"></label>
+            <input type="button" value="Initialize" id="starter">
+        </nav>
+    </header>
+
+    <div class="widgets hidden">
+        <div class="col">
+            <div class="row">
+                <iframe src="js/widgets/languageStats/lang.html" id="lang"></iframe>
+            </div>
+            <div class="row">
+                <iframe src="js/widgets/hashtagStats/hashtag.html" id="hashtag"></iframe>
+            </div>
+        </div>
+        <div class="col">
+            <iframe src="js/widgets/stream/stream.html" id="stream"></iframe>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+	"author"       : "Jim Cowart <jim@ifandelse.com>",
+	"name"         : "postal-xframe-demo",
+	"description"  : "A demonstration application for using postal.xframe",
+	"version"      : "0.1.0",
+	"repository"   : {
+		"type" : "git",
+		"url"  : "git://github.com/postaljs/xframe-demo.git"
+	},
+	"main"         : "app.js",
+	"scripts"      : {
+		"test"  : "",
+		"start" : "node app.js"
+	},
+	"dependencies" : {
+		"underscore"   : "1.4.4",
+		"express"      : "3.1.0",
+		"socket.io"    : "0.9.13",
+		"monologue.js" : "0.1.4",
+		"monopost"     : "0.1.2",
+		"postal"       : "0.8.2",
+		"machina"      : "0.3.2"
+	},
+	"engines"      : {
+		"node" : "0.8.9"
+	}
+}
