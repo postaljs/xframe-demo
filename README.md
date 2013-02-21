@@ -24,7 +24,7 @@ Each iframe "widget" can be found under public/js/widgets, and each has it's own
 Acts as the communication pipeline for all the other assets in the page. Multiple iframe-based widgets that make their own http calls is one thing - but if they each open a socket connection to the same back end, it's recipe for scale-fail. This iframe demonstrates that it's possible to create multiple iframe-based widgets/components that share a common communication infrastructure.
 
 #### Stream
-A frakensteined-Backbone setup that populates a "CollectionView" of tweets returned from the search.
+A frankensteined-Backbone setup that populates a "CollectionView" of tweets returned from the search.
 
 #### Language Stats
 My first (and mostly horrid) attempt at using Raphael.js. One of the server side "processors" calculates the percentage of the languages represented in the tweets and publishes the results, which get sent to the client (via the Comm iframe). Each time results arrive, a new pie chart is rendered. (I'm sure there's a way to update the existing graph, rather than nuking it from orbit each time - if you know of a way, please let me know.)
