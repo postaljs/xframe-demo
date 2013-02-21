@@ -26,9 +26,12 @@ var main = module.exports = {
 
 		io.sockets.on('connection', function (socket) {
 			console.log("client connected");
+			postal.publish({
+				channel: "search",
+				topic: "stop"
+			});
 			socket.on('search.start', function (data) {
 				data = data || {};
-				console.log("Starting Search");
 				postal.publish({
 					channel: "search",
 					topic: "start",
@@ -50,5 +53,11 @@ var main = module.exports = {
 	    new PercentByLang()
 	]
 };
+
+main.searcher.on("#", function(d, e) {
+	if( e.topic !== "batch.results") {
+		console.log( e.topic + " " + (d||""));
+	}
+});
 
 main.init();

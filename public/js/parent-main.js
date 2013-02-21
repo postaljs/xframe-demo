@@ -23,10 +23,14 @@ require([ 'pathConfig' ], function(){
 		var initd = false;
 
 		$(function(){
+			// cheating
+			$("#readme").height($(window).height());
+
 			$("#starter" ).on("click", function(){
 				if(!initd) {
-					initd = true;
 					$(".widgets" ).removeClass('hidden');
+					$("#readme" ).addClass('hidden');
+					initd = true;
 				}
 				postal.publish({
 					channel: "ctrl",

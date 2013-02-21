@@ -45,6 +45,12 @@ label {
     margin-top: 10px;
 }
 
+#readme {
+    height: 700px;
+    width: 100%;
+    border: none;
+}
+
 #comm {
     visibility: hidden;
     height: 0;
@@ -73,6 +79,8 @@ label {
 }
 
 .hidden {
-    visibility: hidden;
+    visibility: collapse;
+    height: 0px;
+    float: left;
 }
 
