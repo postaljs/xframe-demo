@@ -2,7 +2,7 @@
 
 ##What's This All About?
 
-[postal.xframe]() is cross frame messaging add-on for [postal.js](). This is a somewhat silly, completely overkill and mostly contrived sample app which demonstrates how postal.xframe can be used to 'federate' 3 iframes and a parent window.
+[postal.xframe](https://github.com/postaljs/postal.xframe) is cross frame messaging add-on for [postal.js](https://github.com/postaljs/postal.js). This is a somewhat silly, completely overkill and mostly contrived sample app which demonstrates how postal.xframe can be used to 'federate' 3 iframes and a parent window.
 
 ### WARNING
 Really, this is a sample app - so you *will* find bugs. Trust me. This demo is *just-enough-complete* that it allows you to run, but don't let that shiny exterior fool you, inside, it's rough. Also - I recognize that intentionally building a page of nothing but iframes, and having them communicate back and forth via message bus is not your everyday use-case. This is partly for fun, and partly for the time(s) you actually do need to dive deep into cross-frame messaging.
