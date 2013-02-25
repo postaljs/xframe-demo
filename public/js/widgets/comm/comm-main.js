@@ -1,3 +1,7 @@
+if(typeof window === 'undefined' && typeof importScripts === 'function') {
+	importScripts("/js/lib/require/require.js");
+}
+
 require.config({ paths: { pathConfig : '/js/infrastructure/pathConfig' }});
 
 require([ 'pathConfig' ], function(){
@@ -19,7 +23,7 @@ require([ 'pathConfig' ], function(){
 			console.log("ID: " + postal.instanceId() + " - " + JSON.stringify(e, null, 4));
 		});*/
 
-		var socket = io.connect(window.location.origin);
+		var socket = io.connect(location.origin || location.protocol + "//" + location.host);
 		socket.on('postal.batch', function (batch) {
 			_.each(batch, postal.publish);
 		});

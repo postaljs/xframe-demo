@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style type="text/css">
+        /* cheating */
+        .widgets {
+            margin-top: 40px;
+        }
+    </style>
+    <script data-main="js/worker-main" src="js/lib/require/require-jquery.js"></script>
+</head>
+<body>
+    <header>
+        <div>postal.xframe demo</div>
+        <nav>
+            <label>Search Term:<input type="text" value="JavaScript" id="searchQry"></label>
+            <input type="button" value="Initialize" id="starter">
+        </nav>
+    </header>
+    <div class="widgets hidden">
+        <div class="col">
+            <div class="row">
+                <iframe src="js/widgets/languageStats/lang.html" id="lang"></iframe>
+            </div>
+            <div class="row">
+                <iframe src="js/widgets/hashtagStats/hashtag.html" id="hashtag"></iframe>
+            </div>
+        </div>
+        <div class="col">
+            <iframe src="js/widgets/stream/stream.html" id="stream"></iframe>
+        </div>
+    </div>
+    <div>
+        <iframe src="readme.html" id="readme"></iframe>
+    </div>
+</body>
+</html>
