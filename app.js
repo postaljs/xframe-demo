@@ -16,7 +16,7 @@ var BatchManager   = require('./lib/batchManager')(global._, machina, Monologue,
 
 var main = module.exports = {
 	init: function() {
-		server.listen(8080);
+		server.listen(8088);
 		app.use(express.static(__dirname + '/public'));
 		io.set('log level', 1);
 

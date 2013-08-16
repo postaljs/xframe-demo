@@ -23,7 +23,7 @@ require([ 'pathConfig' ], function(){
 			comm: new Worker("/js/widgets/comm/comm-main.js")
 		};
 
-		xframedemo.comm.postMessage("");
+		xframedemo.comm.postMessage();
 
 		postal.fedx.transports.xframe.listenToWorker(xframedemo.comm);
 

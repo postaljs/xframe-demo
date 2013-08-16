@@ -343,10 +343,13 @@
   	},
   
   	/*
+  	signalReady( callback );
+  	signalReady( "transportName" );
   	signalReady( "transportName", callback );
+  	signalReady( "transportName", targetInstance, callback ); <-- this is NEW
   	signalReady( { transportNameA: targetsForA, transportNameB: targetsForB, transportC: true }, callback);
   	*/
-  	signalReady : function ( transport, callback ) {
+  	signalReady : function ( transport, target, callback ) {
   		if ( !_ready ) {
   			_signalQueue.push( arguments );
   			return;
@@ -356,6 +359,10 @@
   			case 1:
   				if ( typeof transport === 'function' ) {
   					callback = transport;
+  				} else if ( typeof transport === 'string' ) {
+  					transports = {};
+  					transports[transport] = this.transports[transport];
+  					callback = NO_OP;
   				}
   			break;
   			case 2:
@@ -365,6 +372,11 @@
   				} else {
   					transports = transport;
   				}
+  				callback = target || NO_OP;
+  			break;
+  			case 3:
+  				transports = {};
+  				transports[transport] = [ target ];
   			break;
   		}
   		_.each( transports, function ( targets, name ) {

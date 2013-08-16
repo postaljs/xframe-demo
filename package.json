@@ -9,8 +9,10 @@
 	},
 	"main"         : "app.js",
 	"scripts"      : {
-		"test"  : "",
-		"start" : "node app.js"
+		"test"     : "",
+		"start"    : "node app.js",
+		"debug"    : "node --debug app.js",
+		"debugbrk" : "node --debug-brk app.js"
 	},
 	"dependencies" : {
 		"underscore"   : "1.4.4",
